@@ -1,252 +1,78 @@
-## Awesome Vision-Language Models [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+## Awesome Human-Object Relationship Understanding [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-<img src="./images/overview.png" width="96%" height="96%">
-
-This is the repository of **Vision Language Models for Vision Tasks: a Survey**, a systematic survey of VLM studies in various visual recognition tasks including image classification, object detection, semantic segmentation, etc. For details, please refer to:
-
-**Vision-Language Models for Vision Tasks: A Survey**  [[Paper](https://arxiv.org/abs/2304.00685)]
-
-*IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2024*
-
-🤩 Our paper is selected into **TPAMI Top 50 Popular Paper List** !!
- 
-[![arXiv](https://img.shields.io/badge/arXiv-2304.00685-b31b1b.svg)](https://arxiv.org/abs/2304.00685) 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) 
-[![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
-<!-- [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org) -->
-<!-- [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](http://ansicolortags.readthedocs.io/?badge=latest) -->
-
-*Feel free to pull requests or contact us if you find any related papers that are not included here.*
-
-The process to submit a pull request is as follows:
-- a. Fork the project into your own repository.
-- b. Add the Title, Paper link, Conference, Project/Code link in `README.md` using the following format:
-```
-  |[Title](Paper Link)|Conference|[Code/Project](Code/Project link)|
-```
-- c. Submit the pull request to this branch.
-
-## 🔥 News
-
-‼️ **We plan to update the arXiv version of our survey paper soon. If your paper is missing from this repository, feel free to contact us or open an issue!**
-
-Last update on 2025/3/24
-
-#### VLMs and Synthetic Data
-
-* [TechRxiv 2025] A Survey on Bridging VLMs and Synthetic Data [[Paper](https://www.techrxiv.org/doi/full/10.36227/techrxiv.174741263.32891073/v1)][[Code](https://github.com/mghiasvand1/Awesome-VLM-Synthetic-Data)]
-
-#### VLM Pre-training Methods
-
-* [NeurIPS 2024] PLIP: Language-Image Pre-training for Person Representation Learning [[Paper](https://papers.nips.cc/paper_files/paper/2024/file/510ad3018bbdc5b6e3b10646e2e35771-Paper-Conference.pdf)][[Code](https://github.com/Zplusdragon/PLIP)]
-* [NeurIPS 2024] LoTLIP: Improving Language-Image Pre-training for Long Text Understanding [[Paper](https://papers.nips.cc/paper_files/paper/2024/file/77828623211df05497ce3658300dafd9-Paper-Conference.pdf)][[Code](https://wuw2019.github.io/lot-lip)]
-* [NeurIPS 2024] Accelerating Pre-training of Multimodal LLMs via Chain-of-Sight [[Paper](https://papers.nips.cc/paper_files/paper/2024/file/8a54a80ffc2834689ffdd0920202018e-Paper-Conference.pdf)][[Code](https://chain-of-sight.github.io/)]
-
-#### VLM Transfer Learning Methods
-* [NeurIPS 2024] ControlMLLM: Training-Free Visual Prompt Learning for Multimodal Large Language Models [[Paper](https://papers.nips.cc/paper_files/paper/2024/file/4fd96b997454b5b02698595df70fccaf-Paper-Conference.pdf)][[Code](https://github.com/mrwu-mac/ControlMLLM)]
-* [NeurIPS 2024] Leveraging Hallucinations to Reduce Manual Prompt Dependency in Promptable Segmentation [[Paper](https://papers.nips.cc/paper_files/paper/2024/file/c1e1ad233411e25b54bb5df3a0576c2c-Paper-Conference.pdf)][[Code](https://lwpyh.github.io/ProMaC/)]
-* [NeurIPS 2024] Visual Fourier Prompt Tuning [[Paper](https://papers.nips.cc/paper_files/paper/2024/file/0a0eba34ab2ff40ca2d2843324dcc4ab-Paper-Conference.pdf)][[Code](https://github.com/runtsang/VFPT)]
-* [NeurIPS 2024] Improving Visual Prompt Tuning by Gaussian Neighborhood Minimization for Long-Tailed Visual Recognition [[Paper](https://papers.nips.cc/paper_files/paper/2024/file/bc667ac84ef58f2b5022da97a465cbab-Paper-Conference.pdf)][[Code](https://github.com/Keke921/GNM-PT)]
-* [NeurIPS 2024] Few-Shot Adversarial Prompt Learning on Vision-Language Models [[Paper](https://papers.nips.cc/paper_files/paper/2024/file/05aedcaf4bc6e78a5e22b4cf9114c5e8-Paper-Conference.pdf)][[Code](https://github.com/lionel-w2/FAP)]
-* [NeurIPS 2024] Visual Prompt Tuning in Null Space for Continual Learning [[Paper](https://papers.nips.cc/paper_files/paper/2024/file/0f06be0008bc568c88d76206aa17954f-Paper-Conference.pdf)][[Code](https://github.com/zugexiaodui/VPTinNSforCL)]
-* [NeurIPS 2024] IPO: Interpretable Prompt Optimization for Vision-Language Models [[Paper](https://papers.nips.cc/paper_files/paper/2024/file/e52e4de8689a9955b6d3ff421d019387-Paper-Conference.pdf)]
-* [NeurIPS 2024] LoCoOp: Few-Shot Out-of-Distribution Detection via Prompt Learning [[Paper](https://papers.nips.cc/paper_files/paper/2023/file/f0606b882692637835e8ac981089eccd-Paper-Conference.pdf)][[Code](https://github.com/AtsuMiyai/LoCoOp)]
-
-
-#### VLM Knowledge Distillation for Detection
-
-* [NeurIPS 2024] Scaling Open-Vocabulary Object Detection [[Paper](https://papers.nips.cc/paper_files/paper/2023/file/e6d58fc68c0f3c36ae6e0e64478a69c0-Paper-Conference.pdf)][[Code](https://github.com/google-research/scenic/tree/main/scenic/projects/owl_vit)]
-* [NeurIPS 2024] Bridging the Gap between Object and Image-level Representations for Open-Vocabulary Detection [[Paper](https://papers.nips.cc/paper_files/paper/2022/file/dabf612543b97ea9c8f46d058d33cf74-Paper-Conference.pdf)][[Code](https://github.com/hanoonaR/object-centric-ovd)]
-* [NeurIPS 2024] CoDet: Co-Occurrence Guided Region-Word Alignment for Open-Vocabulary Object Detection [[Paper](https://papers.nips.cc/paper_files/paper/2023/file/e10a6a906ef323efaf708f76cf3c1d1e-Paper-Conference.pdf)][[Code](https://github.com/CVMI-Lab/CoDet)]
-
-#### VLM Knowledge Distillation for Segmentation
-
-* [NeurIPS 2024] Relationship Prompt Learning is Enough for Open-Vocabulary Semantic Segmentation [[Paper](https://papers.nips.cc/paper_files/paper/2024/file/8773cdaf02c5af3528e05f1cee816129-Paper-Conference.pdf)]
-
-#### VLM Knowledge Distillation for Other Vision Tasks
-
-
-
-## Abstract
-
-Most visual recognition studies rely heavily on crowd-labelled data in deep neural networks (DNNs) training, and they usually train a DNN for each single visual recognition task, leading to a laborious and time-consuming visual recognition paradigm. To address the two challenges, Vision Language Models (VLMs) have been intensively investigated recently, which learns rich vision-language correlation from web-scale image-text pairs that are almost infinitely available on the Internet and enables zero-shot predictions on various visual recognition tasks with a single VLM. This paper provides a systematic review of visual language models for various visual recognition tasks, including: (1) the background that introduces the development of visual recognition paradigms; (2) the foundations of VLM that summarize the widely-adopted network architectures, pre-training objectives, and downstream tasks; (3) the widely adopted datasets in VLM pre-training and evaluations; (4) the review and categorization of existing VLM pre-training methods, VLM transfer learning methods, and VLM knowledge distillation methods; (5) the benchmarking, analysis and discussion of the reviewed methods; (6) several research challenges and potential research directions that could be pursued in the future VLM studies for visual recognition.
-
-## Citation
-If you find our work useful in your research, please consider citing:
-```
-@article{zhang2024vision,
-  title={Vision-language models for vision tasks: A survey},
-  author={Zhang, Jingyi and Huang, Jiaxing and Jin, Sheng and Lu, Shijian},
-  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
-  year={2024},
-  publisher={IEEE}
-}
-```
 
 ## Menu
 - [Datasets](#datasets)
-  - [Datasets for VLM Pre-training](#datasets-for-vlm-pre-training)
-  - [Datasets for VLM Evaluation](#datasets-for-vlm-evaluation)
-- [Vision-Language Pre-training Methods](#vision-language-pre-training-methods)
-  - [Pre-training with Contrastive Objective](#pre-training-with-contrastive-objective)
-  - [Pre-training with Generative Objective](#pre-training-with-generative-objective)
-  - [Pre-training with Alignment Objective](#pre-training-with-alignment-objective)
-- [Vision-Language Model Transfer Learning Methods](#vision-language-model-transfer-learning-methods)
-  - [Transfer with Prompt Tuning](#transfer-with-prompt-tuning)
-    - [Transfer with Text Prompt Tuning](#transfer-with-text-prompt-tuning)
-    - [Transfer with Visual Prompt Tuning](#transfer-with-visual-prompt-tuning)
-    - [Transfer with Text and Visual Prompt Tuning](#transfer-with-text-and-visual-prompt-tuning)
-  - [Transfer with Feature Adapter](#transfer-with-feature-adapter)
-  - [Transfer with Other Methods](#transfer-with-other-methods)
-- [Vision-Language Model Knowledge Distillation Methods](#vision-language-model-knowledge-distillation-methods)
-  - [Knowledge Distillation for Object Detection](#knowledge-distillation-for-object-detection)
-  - [Knowledge Distillation for Semantic Segmentation](#knowledge-distillation-for-semantic-segmentation)
+  - [Datasets for Gaze Following Estimation](#datasets-for-gaze-following-estimation)
+  - [Datasets for Gaze Object Prediction](#datasets-for-gaze-object-prediction)
+  - [Datasets for Human Object Interaction Detection](#datasets-for-human-object-interaction-detection)
+- [Human-Object Relationship Understanding Methods](#methods)
+  - [Methods for Gaze Following Estimation](#methods-for-gaze-following-estimation)
+  - [Methods for Gaze Object Prediction](#methods-for-gaze-object-prediction)
+  - [Methods for Human Object Interaction Detection](#methods-for-human-object-interaction-detection)
+- [Performance](#performance)
+  - [Gaze Following Estimation](#gaze-following-estimation)
+    - [Results on GazeFollow dataset](#results-gazefollow-dataset)
+    - [Results on VideoAttentionTarget dataset](#gresults-videoattentiontarget-dataset)
+  - [Gaze Object Prediction](#gaze-object-prediction)
+    - [Results on GOO dataset](#results-goo-dataset)
+  - [Human Object Interaction Detection](#human-object-interaction-detection)
+    - [Results on HICO-Det dataset](#results-hicodet-dataset)
+    - [Results on V-COCO dataset](#results-vcoco-dataset)
+
+
 
 ## Datasets
 
-### Datasets for VLM Pre-training
+### Datasets for Gaze Following Estimation
 
 
-| Dataset                                             |  Year  |     Num of Image-Text Paris     |     Language     | Project |                                  
-|-----------------------------------------------------|:------:|:-------------------------------:|:----------------:|:------------:|
-|[SBU Caption](https://proceedings.neurips.cc/paper_files/paper/2011/file/5dd9db5e033da9c6fb5ba83c7a7ebea9-Paper.pdf)|2011|1M|English|[Project](https://www.cs.rice.edu/~vo9/sbucaptions/)|
-|[COCO Caption](https://arxiv.org/pdf/1504.00325v2.pdf)|2016|1.5M|English|[Project](https://github.com/tylin/coco-caption)|
-|[Yahoo Flickr Creative Commons 100 Million](https://arxiv.org/pdf/1503.01817v2.pdf)|2016|100M|English|[Project](http://projects.dfki.uni-kl.de/yfcc100m/)|
-|[Visual Genome](https://arxiv.org/pdf/1602.07332v1.pdf)|2017|5.4M|English|[Project](http://visualgenome.org/)|
-|[Conceptual Captions 3M](https://aclanthology.org/P18-1238.pdf)|2018|3.3M|English|[Project](https://ai.google.com/research/ConceptualCaptions/)|
-|[Localized Narratives](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123500630.pdf)|2020|0.87M|English|[Project](https://google.github.io/localized-narratives/)|
-|[Conceptual 12M](https://openaccess.thecvf.com/content/CVPR2021/papers/Changpinyo_Conceptual_12M_Pushing_Web-Scale_Image-Text_Pre-Training_To_Recognize_Long-Tail_Visual_CVPR_2021_paper.pdf)|2021|12M|English|[Project](https://github.com/google-research-datasets/conceptual-12m)|
-|[Wikipedia-based Image Text](https://arxiv.org/pdf/2103.01913v2.pdf)|2021|37.6M|108 Languages|[Project](https://github.com/google-research-datasets/wit)|
-|[Red Caps](https://arxiv.org/pdf/2111.11431v1.pdf)|2021|12M|English|[Project](https://redcaps.xyz/)|
-|[LAION400M](https://arxiv.org/pdf/2111.02114v1.pdf)|2021|400M|English|[Project](https://laion.ai/blog/laion-400-open-dataset/)|
-|[LAION5B](https://arxiv.org/pdf/2210.08402.pdf)|2022|5B|Over 100 Languages|[Project](https://laion.ai/blog/laion-5b/)|
-|[WuKong](https://arxiv.org/pdf/2202.06767.pdf)|2022|100M|Chinese|[Project](https://wukong-dataset.github.io/wukong-dataset/)|
-|[CLIP](https://arxiv.org/pdf/2103.00020.pdf)|2021|400M|English|-|
-|[ALIGN](https://arxiv.org/pdf/2102.05918.pdf)|2021|1.8B|English|-|
-|[FILIP](https://arxiv.org/pdf/2111.07783.pdf)|2021|300M|English|-|
-|[WebLI](https://arxiv.org/pdf/2209.06794.pdf)|2022|12B|English|-|
+### Datasets for Gaze Object Prediction
+
+
+### Datasets for Human Object Interaction Detection
 
 
 
-### Datasets for VLM Evaluation
-
-#### Image Classification
-
-| Dataset                                             |  Year  | Classes | Training | Testing |Evaluation Metric| Project|                                  
-|-----------------------------------------------------|:------:|:-------:|:--------:|:-------:|:------:|:-----------:|
-|MNIST|1998|10|60,000|10,000|Accuracy|[Project](http://yann.lecun.com/exdb/mnist/)|
-|Caltech-101|2004|102|3,060|6,085|Mean Per Class|[Project](https://data.caltech.edu/records/mzrjq-6wc02)|
-|PASCAL VOC 2007|2007|20|5,011|4,952|11-point mAP|[Project](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/)|
-|Oxford 102 Flowers|2008|102|2,040|6,149|Mean Per Class|[Project](https://www.robots.ox.ac.uk/~vgg/data/flowers/102/)|
-|CIFAR-10|2009|10|50,000|10,000|Accuracy|[Project](https://www.cs.toronto.edu/~kriz/cifar.html)|
-|CIFAR-100|2009|100|50,000|10,000|Accuracy|[Project](https://www.cs.toronto.edu/~kriz/cifar.html)|
-|ImageNet-1k|2009|1000|1,281,167|50,000|Accuracy|[Project](https://www.image-net.org/)|
-|SUN397|2010|397|19,850|19,850|Accuracy|[Project](https://vision.princeton.edu/projects/2010/SUN/)|
-|SVHN|2011|10|73,257|26,032|Accuracy|[Project](http://ufldl.stanford.edu/housenumbers/)|
-|STL-10|2011|10|1,000|8,000|Accuracy|[Project](https://cs.stanford.edu/~acoates/stl10/)|
-|GTSRB|2011|43|26,640|12,630|Accuracy|[Project](https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign)|
-|KITTI Distance|2012|4|6,770|711|Accuracy|[Project](https://github.com/harshilpatel312/KITTI-distance-estimation)|
-|IIIT5k|2012|36|2,000|3,000|Accuracy|[Project](https://cvit.iiit.ac.in/research/projects/cvit-projects/the-iiit-5k-word-dataset)|
-|Oxford-IIIT PETS|2012|37|3,680|3,669|Mean Per Class|[Project](https://www.robots.ox.ac.uk/~vgg/data/pets/)|
-|Stanford Cars|2013|196|8,144|8,041|Accuracy|[Project](http://ai.stanford.edu/~jkrause/cars/car_dataset.html)|
-|FGVC Aircraft|2013|100|6,667|3,333|Mean Per Class|[Project](https://www.robots.ox.ac.uk/~vgg/data/fgvc-aircraft/)|
-|Facial Emotion|2013|8|32,140|3,574|Accuracy|[Project](https://www.kaggle.com/competitions/challenges-in-representation-learning-facial-expression-recognition-challenge/data)|
-|Rendered SST2|2013|2|7,792|1,821|Accuracy|[Project](https://github.com/openai/CLIP/blob/main/data/rendered-sst2.md)|
-|Describable Textures|2014|47|3,760|1,880|Accuracy|[Project](https://www.robots.ox.ac.uk/~vgg/data/dtd/)|
-|Food-101|2014|101|75,750|25,250|Accuracy|[Project](https://www.kaggle.com/datasets/dansbecker/food-101)|
-|Birdsnap|2014|500|42,283|2,149|Accuracy|[Project](https://thomasberg.org/)|
-|RESISC45|2017|45|3,150|25,200|Accuracy|[Project](https://pan.baidu.com/s/1mifR6tU?_at_=1679281159364#list/path=%2F)|
-|CLEVR Counts|2017|8|2,000|500|Accuracy|[Project](https://cs.stanford.edu/people/jcjohns/clevr/)|
-|PatchCamelyon|2018|2|294,912|32,768|Accuracy|[Project](https://github.com/basveeling/pcam)|
-|EuroSAT|2019|10|10,000|5,000|Accuracy|[Project](https://github.com/phelber/eurosat)|
-|Hateful Memes|2020|2|8,500|500|ROC AUC|[Project](https://ai.facebook.com/blog/hateful-memes-challenge-and-data-set/)|
-|Country211|2021|211|43,200|21,100|Accuracy|[Project](https://github.com/openai/CLIP/blob/main/data/country211.md)|
-
-#### Image-Text Retrieval
-
-| Dataset                                             |  Year  | Classes | Training | Testing |Evaluation Metric| Project|                                  
-|-----------------------------------------------------|:------:|:-------:|:--------:|:-------:|:------:|:-----------:|
-|Flickr30k|2014|-|31,783|-|Recall|[Project](https://shannon.cs.illinois.edu/DenotationGraph/)
-|COCO Caption|2015|-|82,783|5,000|Recall|[Project](https://github.com/tylin/coco-caption)
-
-
-#### Action Recognition
-
-| Dataset                                             |  Year  | Classes | Training | Testing |Evaluation Metric| Project|                                  
-|-----------------------------------------------------|:------:|:-------:|:--------:|:-------:|:------:|:-----------:|
-|UCF101|2012|101|9,537|1,794|Accuracy|[Project](https://www.crcv.ucf.edu/data/UCF101.php)|
-|Kinetics700|2019|700|494,801|31,669|Mean (top1, top5)|[Project](https://www.deepmind.com/open-source/kinetics)|
-|RareAct|2020|122|7,607|-|mWAP, mSAP|[Project](https://github.com/antoine77340/RareAct)|
-
-#### Object Detection
-
-| Dataset                                             |  Year  | Classes | Training | Testing |Evaluation Metric| Project|                                  
-|-----------------------------------------------------|:------:|:-------:|:--------:|:-------:|:------:|:-----------:|
-|COCO 2014 Detection|2014|80|83,000|41,000|Box mAP|[Project](https://www.kaggle.com/datasets/jeffaudi/coco-2014-dataset-for-yolov3)|
-|COCO 2017 Detection|2017|80|118,000|5,000|Box mAP|[Project](https://www.kaggle.com/datasets/awsaf49/coco-2017-dataset)|
-|LVIS|2019|1203|118,000|5,000|Box mAP|[Project](https://www.lvisdataset.org/)|
-|ODinW|2022|314|132,413|20,070|Box mAP|[Project](https://eval.ai/web/challenges/challenge-page/1839/overview)|
-
-#### Semantic Segmentation
-
-| Dataset                                             |  Year  | Classes | Training | Testing |Evaluation Metric| Project|                                  
-|-----------------------------------------------------|:------:|:-------:|:--------:|:-------:|:------:|:-----------:|
-|PASCAL VOC 2012|2012|20|1,464|1,449|mIoU|[Project](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/)|
-|PASCAL Content|2014|459|4,998|5,105|mIoU|[Project](https://www.cs.stanford.edu/~roozbeh/pascal-context/)|
-|Cityscapes|2016|19|2,975|500|mIoU|[Project](https://www.cityscapes-dataset.com/)|
-|ADE20k|2017|150|25,574|2,000|mIoU|[Project](https://groups.csail.mit.edu/vision/datasets/ADE20K/)|
-
-## Vision-Language Pre-training Methods
+## Human-Object Relationship Understanding Methods
 
 
 
-
-
-
-### Pre-training with Contrastive Objective
+### Methods for Gaze Following Estimation
 
 | Paper                                             |  Published in | Code/Project |                                  
 |---------------------------------------------------|:-------------:|:------------:|
-|[CLIP: Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/pdf/2103.00020.pdf)|ICML 2021|[Code](https://github.com/openai/CLIP)|
-|[ALIGN: Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision](https://arxiv.org/pdf/2102.05918.pdf)|ICML 2021|-|
-|[OTTER: Data Efficient Language-Supervised Zero-Shot Recognition with Optimal Transport Distillation](https://github.com/facebookresearch/OTTER)|arXiv 2021|[Code](https://github.com/facebookresearch/OTTER)|
-|[Florence: A New Foundation Model for Computer Vision](https://arxiv.org/abs/2111.11432)|arXiv 2021|-|
-|[RegionClip: Region-based Language-Image Pretraining](https://arxiv.org/abs/2112.09106)|arXiv 2021|[Code](https://github.com/microsoft/RegionCLIP)|
-|[DeCLIP: Supervision Exists Everywhere: A Data Efficient Contrastive Language-Image Pre-training Paradigm](https://arxiv.org/abs/2110.05208)|ICLR 2022|[Code](https://github.com/Sense-GVT/DeCLIP)|
-|[FILIP: Fine-grained Interactive Language-Image Pre-Training](https://arxiv.org/abs/2111.07783)|ICLR 2022|-|
-|[KELIP: Large-scale Bilingual Language-Image Contrastive Learning](https://arxiv.org/abs/2203.14463)|ICLRW 2022|[Code](https://github.com/navervision/KELIP)|
-|[ZeroVL: Contrastive Vision-Language Pre-training with Limited Resources](https://arxiv.org/abs/2112.09331)|ECCV 2022|[Code](https://github.com/zerovl/ZeroVL)|
-|[SLIP: Self-supervision meets Language-Image Pre-training](https://arxiv.org/abs/2112.12750)|ECCV 2022|[Code](https://github.com/facebookresearch/SLIP)|
-|[UniCL: Unified Contrastive Learning in Image-Text-Label Space](https://arxiv.org/abs/2204.03610)|CVPR 2022|[Code](https://github.com/microsoft/UniCL)|
-|[LiT: Zero-Shot Transfer with Locked-image text Tuning](https://arxiv.org/abs/2111.07991)|CVPR 2022|[Code](https://google-research.github.io/vision_transformer/lit/)|
-|[GroupViT: Semantic Segmentation Emerges from Text Supervision](https://arxiv.org/abs/2202.11094)|CVPR 2022|[Code](https://github.com/NVlabs/GroupViT)|
-|[PyramidCLIP: Hierarchical Feature Alignment for Vision-language Model Pretraining](https://arxiv.org/abs/2204.14095)|NeurIPS 2022|-|
-|[UniCLIP: Unified Framework for Contrastive Language-Image Pre-training](https://arxiv.org/abs/2209.13430)|NeurIPS 2022|-|
-|[K-LITE: Learning Transferable Visual Models with External Knowledge](https://arxiv.org/abs/2204.09222)|NeurIPS 2022|[Code](https://github.com/microsoft/klite)|
-|[FIBER: Coarse-to-Fine Vision-Language Pre-training with Fusion in the Backbone](https://arxiv.org/abs/2206.07643)|NeurIPS 2022|[Code](https://github.com/microsoft/FIBER)|
-|[Chinese CLIP: Contrastive Vision-Language Pretraining in Chinese](https://arxiv.org/abs/2211.01335)|arXiv 2022|[Code](https://github.com/OFA-Sys/Chinese-CLIP)|
-|[AltCLIP: Altering the Language Encoder in CLIP for Extended Language Capabilities](https://arxiv.org/abs/2211.06679)|arXiv 2022|[Code](https://github.com/FlagAI-Open/FlagAI/tree/master/examples/AltCLIP)|
-|[SegCLIP: Patch Aggregation with Learnable Centers for Open-Vocabulary Semantic Segmentation](https://arxiv.org/abs/2211.14813)|arXiv 2022|[Code](https://github.com/ArrowLuo/SegCLIP)|
-|[NLIP: Noise-robust Language-Image Pre-training](https://arxiv.org/abs/2212.07086)|AAAI 2023|-|
-|[PaLI: A Jointly-Scaled Multilingual Language-Image Model](https://arxiv.org/abs/2209.06794)|ICLR 2023|[Project](https://ai.googleblog.com/2022/09/pali-scaling-language-image-learning-in.html)|
-|[HiCLIP: Contrastive Language-Image Pretraining with Hierarchy-aware Attention](https://arxiv.org/abs/2303.02995)|ICLR 2023|[Code](https://github.com/jeykigung/hiclip)|
-|[CLIPPO: Image-and-Language Understanding from Pixels Only](https://arxiv.org/abs/2212.08045)|CVPR 2023|[Code](https://github.com/google-research/big_vision)|
-|[RA-CLIP: Retrieval Augmented Contrastive Language-Image Pre-training](https://openaccess.thecvf.com/content/CVPR2023/papers/Xie_RA-CLIP_Retrieval_Augmented_Contrastive_Language-Image_Pre-Training_CVPR_2023_paper.pdf)|CVPR 2023|-|
-|[DeAR: Debiasing Vision-Language Models with Additive Residuals](https://arxiv.org/abs/2303.10431)|CVPR 2023|-|
-|[Filtering, Distillation, and Hard Negatives for Vision-Language Pre-Training](https://arxiv.org/abs/2301.02280)|CVPR 2023|[Code](https://github.com/facebookresearch/diht)|
-|[LaCLIP: Improving CLIP Training with Language Rewrites](https://arxiv.org/abs/2305.20088)|NeurIPS 2023|[Code](https://github.com/LijieFan/LaCLIP)|
-|[ALIP: Adaptive Language-Image Pre-training with Synthetic Caption](https://arxiv.org/pdf/2308.08428.pdf)|ICCV 2023|[Code](https://github.com/deepglint/ALIP)|
-|[GrowCLIP: Data-aware Automatic Model Growing for Large-scale Contrastive Language-Image Pre-training](https://arxiv.org/pdf/2308.11331v1.pdf)|ICCV 2023|-|
-|[CLIPpy: Perceptual Grouping in Contrastive Vision-Language Models](https://arxiv.org/abs/2210.09996)|ICCV 2023|-|
-|[ViTamin: Designing Scalable Vision Models in the Vision-Language Era](https://arxiv.org/abs/2404.02132v1)|CVPR 2024|[Code](https://github.com/Beckschen/ViTamin)|
-|[Iterated Learning Improves Compositionality in Large Vision-Language Models](https://arxiv.org/abs/2404.02145v1)|CVPR 2024|-|
-|[FairCLIP: Harnessing Fairness in Vision-Language Learning](https://arxiv.org/abs/2403.19949v1)|CVPR 2024|[Code](https://ophai.hms.harvard.edu/datasets/fairvlmed10k)|
-|[Retrieval-Enhanced Contrastive Vision-Text Models](https://arxiv.org/abs/2306.07196)|ICLR 2024|-|
-|[CLIPS: An Enhanced CLIP Framework for Learning with Synthetic Captions](https://arxiv.org/abs/2411.16828)]|arXiv 2024|[Code](https://github.com/UCSC-VLAA/CLIPS)|
-|[Sigmoid Loss for Language Image Pre-Training](https://openaccess.thecvf.com/content/ICCV2023/papers/Zhai_Sigmoid_Loss_for_Language_Image_Pre-Training_ICCV_2023_paper.pdf)|CVPR 2023|[Code](https://github.com/google-research/big_vision)|
-
-
-
+|[Where are They Looking?](https://people.csail.mit.edu/khosla/papers/nips2015_recasens.pdf)|NIPS 2015|[Project](http://gazefollow.csail.mit.edu/)|
+|[Connecting Gaze, Scene, and Attention: Generalized Attention Estimation via Joint Modeling of Gaze and Scene Saliency](https://openaccess.thecvf.com/content_ECCV_2018/papers/Eunji_Chong_Connecting_Gaze_Scene_ECCV_2018_paper.pdf)|ECCV 2018|-|
+|[Believe It or Not, We Know What You Are Looking at!](https://arxiv.org/pdf/1907.02364)|ACCV 2018|[Code](https://github.com/svip-lab/GazeFollowing)|
+|[Detecting Attended Visual Targets in Video](https://openaccess.thecvf.com/content_CVPR_2020/papers/Chong_Detecting_Attended_Visual_Targets_in_Video_CVPR_2020_paper.pdf)|CVPR 2020|[Code](https://github.com/ejcgt/attention-target-detection)|
+|[Dual Attention Guided Gaze Target Detection in the Wild](https://openaccess.thecvf.com/content/CVPR2021/papers/Fang_Dual_Attention_Guided_Gaze_Target_Detection_in_the_Wild_CVPR_2021_paper.pdf)|CVPR 2021|[Code](https://github.com/Crystal2333/DAM)|
+|[Multi-Person Gaze-Following with Numerical Coordinate Regression](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9666980)|FG 2021|[Code](https://github.com/moshuilanting/multi-person-gaze-following)|
+|[ESCNet: Gaze Target Detection with the Understanding of 3D Scenes](https://openaccess.thecvf.com/content/CVPR2022/papers/Bao_ESCNet_Gaze_Target_Detection_With_the_Understanding_of_3D_Scenes_CVPR_2022_paper.pdf)|CVPR 2022|-|
+|[Multimodal Across Domains Gaze Target Detection](https://arxiv.org/pdf/2208.10822)|ICMI 2022|[Code](https://github.com/francescotonini/multimodal-across-domains-gaze-target-detection)|
+|[Gaze Estimation via the Joint Modeling of Multiple Cues](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9398702)|TCSVT 2022|-|
+|[We Know Where They Are Looking at From the RGB-D Camera: Gaze Following in 3D](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9740573)|TCSVT 2022|[Project](https://sites.google.com/view/3dgazefollow)|
+|[Gaze Target Estimation Inspired by Interactive Attention](https://ieeexplore.ieee.org/document/9828503)|TCSVT 2022|[Code](https://github.com/nkuhzx/VSG-IA)|
+|[End-to-End Human-Gaze-Target Detection with Transformers](https://openaccess.thecvf.com/content/CVPR2022/papers/Tu_End-to-End_Human-Gaze-Target_Detection_With_Transformers_CVPR_2022_paper.pdf)|CVPR 2022|-|
+|[A Modular Multimodal Architecture for Gaze Target Prediction](https://openaccess.thecvf.com/content/CVPR2022W/GAZE/papers/Gupta_A_Modular_Multimodal_Architecture_for_Gaze_Target_Prediction_Application_to_CVPRW_2022_paper.pdf)|CVPRW 2022|[Code](https://github.com/idiap/multimodal_gaze_target_prediction)|
+|[Depth-aware Gaze Following via Auxiliary Networks for Robotics](https://www.sciencedirect.com/science/article/pii/S0952197622001464)|EAAI 2022|-|
+|[Patch-level Gaze Distribution Prediction for Gaze Following](https://openaccess.thecvf.com/content/WACV2023/papers/Miao_Patch-Level_Gaze_Distribution_Prediction_for_Gaze_Following_WACV_2023_paper.pdf)|WACV 2023|[Code](https://github.com/recasens/Gaze-Following)|
+|[Patch-level Gaze Distribution Prediction for Gaze Following](https://openaccess.thecvf.com/content/WACV2023/papers/Miao_Patch-Level_Gaze_Distribution_Prediction_for_Gaze_Following_WACV_2023_paper.pdf)|WACV 2023|[Code](https://github.com/qiaomu-miao/gazefollowing_pdp)|
+|[ChildPlay: A New Benchmark for Understanding Children’s Gaze Behaviour](https://openaccess.thecvf.com/content/ICCV2023/papers/Tafasca_ChildPlay_A_New_Benchmark_for_Understanding_Childrens_Gaze_Behaviour_ICCV_2023_paper.pdf)|ICCV 2023|[Code](https://github.com/idiap/geomgaze)|
+|[GFIE: A Dataset and Baseline for Gaze-Following from 2D to 3D in Indoor Environments](https://openaccess.thecvf.com/content/CVPR2023/papers/Hu_GFIE_A_Dataset_and_Baseline_for_Gaze-Following_From_2D_to_CVPR_2023_paper.pdf)|ICCV 2023|[Project](https://sites.google.com/view/gfie)|
+|[Object-aware Gaze Target Detection](https://openaccess.thecvf.com/content/ICCV2023/papers/Tonini_Object-aware_Gaze_Target_Detection_ICCV_2023_paper.pdf)|ICCV 2023|[Code](https://github.com/francescotonini/object-aware-gaze-target-detection)|
+|[Leveraging Multi-Modal Saliency and Fusion for Gaze Target Detection](https://ieeexplore.ieee.org/document/10262016)|TCSVT 2023|-|
+|[Un-Gaze: A Unified Transformer for Joint Gaze-Location and Gaze-Object Detection](https://openreview.net/pdf?id=rtdn6GHiLo)|NIPS Gaze Workshop 2023|-|
+|[Sharingan: A Transformer Architecture for Multi-Person Gaze Following](https://openaccess.thecvf.com/content/CVPR2024/papers/Tafasca_Sharingan_A_Transformer_Architecture_for_Multi-Person_Gaze_Following_CVPR_2024_paper.pdf)|CVPR 2024|[Code](https://github.com/idiap/sharingan)|
+|[Gaze Target Detection Based on Head-Local-Global Coordination](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03933.pdf)|ECCV 2024|-|
+|[GazeHTA: End-to-end Gaze Target Detection with Head-Target Association](https://arxiv.org/pdf/2404.10718)|Arxiv 2024|-|
+|[Gaze Target Detection by Merging Human Attention and Activity Cues](https://ojs.aaai.org/index.php/AAAI/article/view/28480)|AAAI 2024|-|
+|[Depth Matters: Spatial Proximity-based Gaze Cone Generation for Gaze Following in Wild](https://dl.acm.org/doi/10.1145/3689643)|TOMM 2024|[Code](https://github.com/VUT-HFUT/DepthMatters)|
+|[A Unified Model for Gaze Following and Social Gaze Prediction](https://ieeexplore.ieee.org/document/10581955)|FG 2024|-|
+|[A Novel Framework for Multi-Person Temporal Gaze Following and Social Gaze Prediction](https://openreview.net/pdf?id=ALU676zGFE)|NIPS 2024|-|
+|[Toward Semantic Gaze Target Detection](https://proceedings.neurips.cc/paper_files/paper/2024/file/dbeb7e621d4a554069a6a775da0f7273-Paper-Conference.pdf)|NIPS 2024|-|
+|[ViTGaze: Gaze Following with Interaction Features in Vision Transformers](https://link.springer.com/article/10.1007/s44267-024-00064-9)|Visual Intelligence 2024|[Code](https://github.com/hustvl/ViTGaze)|
+|[Gaze-LLE: Gaze Target Estimation via Large-Scale Learned Encoders](https://arxiv.org/pdf/2412.09586)|CVPR 2025|[Code](https://github.com/fkryan/gazelle)|
 
 
 
@@ -287,9 +113,6 @@ If you find our work useful in your research, please consider citing:
 |[nCLIP: Non-Contrastive Learning Meets Language-Image Pre-Training](https://arxiv.org/abs/2210.09304)|CVPR 2023|[Code](https://github.com/shallowtoil/xclip)|
 |[Do Vision and Language Encoders Represent the World Similarly?](https://openaccess.thecvf.com/content/CVPR2024/papers/Maniparambil_Do_Vision_and_Language_Encoders_Represent_the_World_Similarly_CVPR_2024_paper.pdf)|CVPR 2024|[Code](https://github.com/mayug/0-shot-llm-vision)|
 |[Non-autoregressive Sequence-to-Sequence Vision-Language Models](https://arxiv.org/abs/2403.02249v1)|CVPR 2024|-|
-|[MMRL: Multi-Modal Representation Learning for Vision-Language Models](https://arxiv.org/abs/2503.08497)|CVPR 2025|[Code](https://github.com/yunncheng/MMRL)|
-
-
 
 
 ## Vision-Language Model Transfer Learning Methods
